@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="alert" id="alert">
+    <span>
+      <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+    </span>
+    <p><strong>Copied to clipboard</strong></p>
+  </div>
+  <div class="generator-intro">
+    <h3>PASSWORD GENERATOR</h3>
+    <h1>Generate your password here</h1>
+  </div>
+  <div class="generator-box">
+    <div class="generated-password">
+      <input type="text" name="" class="inp" placeholder="Generated Password!" value="" id='password'>
+      <button id="clipboard">
+        <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="password-setting">
+      <h2>Customize Password</h2>
+      <div class="settings-panel">
+        <div class="password-length">
+          <p>Password length : <span id="lengthValue">20</span></p>
+          <input type="range" name="length" id="length" class="slider" min="5" max="40" value="20">
+        </div>
+        <div class="compose-password">
+          <div class="checkbox">
+            <input type="checkbox" name="uppercase" id="uppercase" checked>
+            <label for="">Uppercase Letters</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="lowercase" id="lowercase" checked>
+            <label for="">Lowercase Letters</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="symbols" id="symbols" checked>
+            <label for="">Symbols</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="numbers" id="numbers" checked>
+            <label for="">Numbers</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <footer>Made by Utkarsh Purbey</footer>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

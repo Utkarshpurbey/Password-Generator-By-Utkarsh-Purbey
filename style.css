@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #000000;
+  color: #13f0ae;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%) translateY(-300%);
+  width: fit-content;
+  padding: 0.7rem 1.4rem;
+  background-color: var(--cl-black);
+  color: var(--cl-accent);
+  border: 1px solid var(--cl-accent);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  border-radius: 0.6rem;
+  transition: transform 400ms ease-in-out;
+}
+
+.alert span svg {
+  vertical-align: middle;
+}
+
+.alert.active {
+  transform: translateX(-50%) translateY(0);
+}
+
+.generator-box {
+  margin-top: 4%;
+}
+
+.generator-intro {
+  margin-top: 10%;
+  font-size: 150%
+}
+
+@media (max-width : 900px) {
+  .generator-intro {
+    margin-top: 40%;
+  }
+}
+
+.generator-intro h1 {
+  color: #ffffff;
+}
+
+.inp {
+  font-family: 'Rajdhani', sans-serif;
+  width: 50%;
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 140%;
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #13f0ae;
+  background-color: #000000;
+  margin-bottom: 4%;
+}
+
+@media (max-width: 900px) {
+  .inp {
+    width: 75%;
+  }
+}
+
+::placeholder {
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 140%;
+  text-align: center;
+}
+
+.settings-panel {
+  margin: 2%;
+}
+
+.compose-password {
+  margin: 1%;
+}
+
+footer {
+  margin-top: 9.5%;
+  font-size: 120%;
+}
+
+.generated-password button {
+  border: none;
+  background-color: transparent;
+}
+
+.generated-password button svg {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.generated-password button:hover svg {
+  opacity: 1.2;
+  15rem
+}
+
+.password-setting {
+  font-size: 130%;
+  color: #ffffff;
+  box-shadow: 0 0px 3px rgba(255, 255, 255, 0.1);
+  border-radius: 0.6rem;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.password-length .slider {
+  width: 30%;
+  height: 0.3rem;
+  -webkit-appearance: none;
+  background-color: #13f0ae;
+}
+
+@media (max-width : 900px) {
+  .password-length .slider {
+    width: 75%;
+  }
+}
